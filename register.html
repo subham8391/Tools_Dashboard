@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body onload="isAuthenticate(event)">
+    <div class="container">
+        <div class="header-without-login">
+            <h2>Welcome to Tools Dashboard</h2>
+            <h4>One Place for your daily use tools.</h4>
+        </div>
+        <div class="login-container flex flex-col">
+            <img class="pag-img" src="./image/Wavy_Bus-17_Single-07.jpg" alt="">
+
+            <h2>Register</h2>
+            <input id='userName' placeholder="Please enter your name" type='text' oninput="handlChange(event)" />
+            <input id="userLastName" placeholder="Please enter lastName " type='text' oninput="handlChange(event)" />
+            <input id="useremail" placeholder="Please enter your email" type='email' oninput="handlChange(event)" />
+
+            <input id='userpassword' placeholder="Password" type='password' oninput="handlChange(event)" />
+            <input id='confirmpassword' placeholder="Confirm Password" type='password' oninput="handlChange(event)" />
+
+            <span id='error'></span>
+            <button class="register-btn" onclick="handleClick(event)">Continue</button>
+            <div>
+                <span>Existing user ? Login <a href='/index.html'>here</a></span>
+            </div>
+        </div>
+
+    </div>
+    <script src="./JS/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body onload="isAuthenticate(event)">
+    <!-- onload="isAuthenticate(event)" -->
+    <div class="container">
+        <div class="header">
+            <h2 class="hed-title"> Welcome to dashboard </h2>
+            <button class="head-btn" onclick="logout(event)"><img src="./image/logout (1).png" alt=""></button>
+        </div>
+        <div class="body-section">
+            <button id="toggleSidebar" class="floating-button"><i class="fas fa-bars"></i></button>
+            <div class="sidebar">
+                <h2>Toole`s-Dashboard</h2>
+                <ul>
+                    <li><a href="#" id="home-link">Home</a></li>
+                    <li><a href="#" id="about-link">About</a></li>
+                    <li><a href="#" id="services-link">Services</a></li>
+                    <li><a href="#" id="portfolio-link">Portfolio</a></li>
+                    <li><a href="#" id="contact-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="content" id="home-content">
+                <h2>Main Content - Home</h2>
+                <p>This is the Home content.</p>
+            </div>
+            <div class="content" id="about-content">
+                <h2>Main Content - About</h2>
+                <p>This is the About content.</p>
+            </div>
+            <div class="content" id="services-content">
+                <h2>Main Content - Services</h2>
+                <p>This is the Services content.</p>
+            </div>
+            <div class="content" id="portfolio-content">
+                <h2>Main Content - Portfolio</h2>
+                <p>This is the Portfolio content.</p>
+            </div>
+            <div class="content" id="contact-content">
+                <h2>Main Content - Contact</h2>
+                <p>This is the Contact content.</p>
+            </div>
+        </div>
+    </div>
+    <script src='./JS/dashboard.js'></script>
+
+</body>
+
+</html>
+
+
+
+

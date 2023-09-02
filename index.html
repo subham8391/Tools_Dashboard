@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body onload="isAuthenticate(event)">
+    <div class="container">
+        <div class="header-without-login">
+            <h2>Welcome to Tools Dashboard</h2>
+            <h4>Ome place for your daily use tool</h4>
+        </div>
+        
+        <div class="login-container flex">
+            <img class="pag-img" src="./image/Wavy_Bus-17_Single-07.jpg" alt="">
+            <h2>Login</h2>
+            <input onChange="handleChange(event)" id="useremail" type="email" placeholder="Enter your email...">
+            <input onChange="handleChange(event)" id="userpass" type="password" placeholder="Enter your password...">
+            <span id="error"></span>
+            <button class="login-btn" onclick="handleClick(event)">Contineu</button>
+            <div>
+                <span>Not Registered ? Register <a href='/register.html'>here</a></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="./JS/index.js"></script>
+</body>
+</html>
